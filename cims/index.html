@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CIMS</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/half-slider.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" style="color:#fff">CIMS</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="student/index.php">Student Login</a>
+                    </li>
+                    <li>
+                        <a href="student/registration.php">Student Registration</a>
+                    </li>
+                    <li>
+                        <a href="admin/">Admin</a>
+                      
+                    </li>
+                    <li>
+                        <a href="admin/">Faculty</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#review">Review</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Half Page Image Background Carousel Header -->
+    <header id="myCarousel" class="carousel slide" style="margin-top:4%">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+           
+            <div class="item active">
+                <!-- Set the second background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/c2.png');"></div>
+                <div class="carousel-caption">
+                  
+                </div>
+            </div>
+            <div class="item">
+                <!-- Set the third background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('img/suggestion.jpeg');"></div>
+                <div class="carousel-caption">
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+
+    </header>
+
+    <!-- Page Content -->
+
+
+    <div class="container">
+        <center>
+        <h3>Contact-Us</h3>
+    </center>
+        <form action="contact_us.php" method="POST" id="contact">
+            <div class="form-group">
+                <label for="firstname">Firstname</label>
+                <input type="text" name="firstname" id="firstname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" name="lastname" id="lastname" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" name="phone" id="phone" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" class="form-control" required>
+            </div>
+            <div class="form-group">
+        <button class="btn btn-success" type="submit" name="submit">Submit</button>
+        
+    </div>
+        </form>
+    
+    </div>
+ <div class="container">
+    <center>
+    <h2>Review</h2>
+</center>
+    <form method="post" action="submit_review.php" id="review">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="message">Your Review:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+
+       
+        <div class="row">
+            <center>
+            <div class="col-lg-12">
+                <h1>Complaint Management And Indication System</h1>
+                <p></p>
+                
+            </div>
+        </center>
+        </div>
+
+        
+    </div>
+
+
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+ 
+
+</body>
+
+</html>
